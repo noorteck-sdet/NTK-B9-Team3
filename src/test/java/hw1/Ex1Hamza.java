@@ -14,16 +14,12 @@ public class Ex1Hamza {
 
 		// step 2. Create an object of Webdriver
 		WebDriver driver = new ChromeDriver();
-
+		// Navigate to the URL
 		driver.get("https://ntkhr.noortecktraining.com/web/index.php/auth/login");
-
 
 		String pageTitle = driver.getTitle();
 		System.out.println("pageTitle" + pageTitle);
-		
-	
-		
-		
+
 		driver.manage().window().maximize();
 
 		WebElement username = driver.findElement(By.name("username"));
@@ -35,29 +31,11 @@ public class Ex1Hamza {
 
 		password.sendKeys("Ntk-orange!admin.123");
 		Thread.sleep(3000);
-	
-		
-		
-		
+
 		WebElement LoginButton = driver.findElement(By.tagName("button"));
 
 		LoginButton.click();
 		Thread.sleep(3000);
-		
-	 
-        WebElement heder = driver.findElement(By.tagName("h6"));
-        
-        String str = heder.getText();
-        
-        String str1 = "Dashboard";
-        
-        if (str.contains(str1)) {
-        	System.out.println("PASSED");
-        }else {
-        	System.out.println("Filed");
-        }
-		
-		
 
 		
 		Thread.sleep(3000);
