@@ -96,7 +96,6 @@ public class Reham2 {
 		} else {
 			System.out.println("TESTCASE FAILED");
 		}
-		// 18. close the browser
 		driver.quit();
 		
 		
