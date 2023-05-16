@@ -24,7 +24,7 @@ public class Hw1NoorShamara {
 		WebElement passwordField = driver.findElement(By.name("password"));
 		passwordField.sendKeys("Ntk-orange!admin.123");
 		Thread.sleep(1000);
-		
+
 		// Click Login Button
 		WebElement loginButton = driver.findElement(By.tagName("button"));
 		loginButton.click();
